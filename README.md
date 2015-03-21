@@ -37,6 +37,11 @@ Your mission is to write a web app with the below views.
   - Resource: `http://api.bluepromocode.com/v2/users/self/promotions/suggestions`
   - Method: `GET`
 
+Tip: To get around cross-domain issues you can either disable web security or
+enable CORS and develop using the allowed origin, local.bluepromocode.com:4200,
+which points to 127.0.0.1. Please contact us at web@zipfworks.com if you have
+questions.
+
 ### Tech Stack ###
 
 You're welcome to use any Javascript and CSS frameworks or libraries of your choosing
