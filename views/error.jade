@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  h3= "Sorry. The content you are looking for is not found. Here's the error stack"
+  pre #{error.stack}
