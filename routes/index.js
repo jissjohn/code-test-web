@@ -6,8 +6,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   request('http://api.bluepromocode.com/v2/promotions', function(error, response, body) {
   	if(!error && response && response.statusCode === 200) {
-  		//Process JSON HERE
-  		res.render('index', { title: 'Promotions' });
+  		body = JSON.parse(body);
+  		res.render('index', {coupons: body.promotions});
   	} else {
   		console.log(error);
   		res.render('error');
