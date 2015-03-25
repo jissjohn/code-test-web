@@ -1,1 +1,11 @@
-li #{coupon.description}
+li
+	.coupon-container
+		.img-col
+			img(src='#{coupon.merchant.logo.url}')
+		.content
+			span.merchant-name
+				|#{coupon.merchant.name}
+			p.description
+				|#{coupon.description}
+		.action-col
+			a.deal-link(href='#{coupon.baseLink}#{coupon.slug}' target="_blank") Get Deal

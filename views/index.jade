@@ -1,6 +1,10 @@
 extends layout
 
 block content
-	ul
-		each coupon in coupons
-			include partials/coupon
+	.coupons-col
+		ul
+			each coupon in coupons
+				include partials/coupon
+
+	.login-col
+			include partials/login
